@@ -104,6 +104,7 @@ class Lm_Admin_Calendar_Admin {
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/lm-admin-calendar-admin.js', array( 'fullcalendar', 'jquery-ui-core', 'jquery' ), $this->version, false );
 
 		wp_enqueue_script('jquery-ui-dialog');
+		wp_enqueue_script('jquery-ui-datepicker');
 
 		// Include the fullcalendar library for the implementation of the calendar.
 		wp_enqueue_script( 'fullcalendar', 'https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.6.2/fullcalendar.min.js', array( 'momentjs' ), $this->version, false );
