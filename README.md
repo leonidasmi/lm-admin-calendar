@@ -11,10 +11,12 @@ The user's events are saved as Custom Post Types and a custom dashboard widget d
 
 The plugin uses [WordPress Plugin Boilerplate](https://github.com/DevinVinson/WordPress-Plugin-Boilerplate) for the data structure, [WordPress Coding Standards](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards) for enforcing coding conventions and [Full Callendar](https://fullcalendar.io/) for the event calendar.
 
-## Features
+## Usage
 
-* 
-* 
+* Go to Events -> Add New Event
+* Create a new Event along with its categories and date
+* After the Event creation, a event in the Calendar Dashboard Widget will be added
+* Click the Event on the calendar to see its details (Date, Categories)
 
 ## Installation
 

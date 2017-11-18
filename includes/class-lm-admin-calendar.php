@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The file that defines the core plugin class
  *
@@ -135,7 +134,7 @@ class Lm_Admin_Calendar {
 		/**
 		 * The class responsible for sanitizing user input
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-lm-admin-calendar-sanitize.php';		
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-lm-admin-calendar-sanitize.php';
 
 		$this->loader = new Lm_Admin_Calendar_Loader();
 		$this->sanitizer = new Lm_Admin_Calendar_Sanitize();
@@ -179,21 +178,19 @@ class Lm_Admin_Calendar {
 		// Create the PHP for the AJAX call.
 		$this->loader->add_action( 'wp_ajax_load_events', $plugin_admin, 'load_events' );
 
-		// Create Post Type: Events
+		// Create Post Type: Events.
 		$this->loader->add_action( 'init', $plugin_admin, 'new_cpt_event' );
-		// Create Custom Taxonomy: Category
+		// Create Custom Taxonomy: Category.
 		$this->loader->add_action( 'init', $plugin_admin, 'new_taxonomy_category' );
 
-
-		
 	}
 
 
 	/**
 	 * Register all of the hooks related to metaboxes
 	 *
-	 * @since 		1.0.0
-	 * @access 		private
+	 * @since  1.0.0
+	 * @access private
 	 */
 	private function define_metabox_hooks() {
 

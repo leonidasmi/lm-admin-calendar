@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Provide a admin area view for the plugin
  *
@@ -11,6 +10,7 @@
  * @package    Lm_Admin_Calendar
  * @subpackage Lm_Admin_Calendar/admin/partials
  */
+
 ?>
 
 <!-- This file should primarily consist of HTML with a little bit of PHP. -->
